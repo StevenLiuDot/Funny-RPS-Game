@@ -1,0 +1,97 @@
+.playground {
+  width: 100%;
+
+  position: relative;
+  margin-top: 3.125rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.items {
+  margin-top: 50px;
+  height: 300px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../assets/images/bg-triangle.svg");
+  background-size: 20%;
+  gap: 2rem;
+}
+
+.icon {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border-color: transparent;
+  border: 20px solid;
+  background-size: 50%;
+}
+
+.icon__paper {
+  position: absolute;
+  top: -50px;
+  left: 500px;
+  background-image: url("../assets/images/icon-paper.svg");
+  background-color: #fff;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-color: var(--paper--gradient);
+  border-radius: 50%;
+  box-shadow: inset 0px 8px 6px #cccccc, 0px 8px 6px #3333cc;
+}
+
+.icon__rock {
+  position: absolute;
+  top: 130px;
+  background-image: url("../assets/images/icon-rock.svg");
+  background-color: #fff;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-color: var(--rock--gradient);
+  border-radius: 50%;
+  box-shadow: inset 0px 8px 6px #cccccc, 0px 8px 6px #990033;
+}
+
+.icon__scissors {
+  position: absolute;
+  top: -50px;
+  right: 500px;
+  background-image: url("../assets/images/icon-scissors.svg");
+  background-color: #fff;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-color: var(--scissors--gradient);
+  border-radius: 50%;
+  box-shadow: inset 0px 8px 6px #cccccc, 0px 8px 6px #cc6633;
+}
+
+.rules {
+  margin-top: 10px;
+  display: flex;
+  justify-content: right;
+}
+
+.rules_button {
+  margin-right: 50px;
+  padding: 5px 25px 5px 25px;
+  text-align: center;
+  font-size: 14px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 300;
+  color: #868aa5;
+  border: 2px solid #868aa5;
+  border-radius: 6px;
+  background-color: #171a3d;
+}
+
+.modal {
+  height: 400px;
+  width: 400px;
+  background-image: url("../assets/images/image-rules.svg");
+}
