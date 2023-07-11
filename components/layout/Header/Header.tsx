@@ -9,9 +9,9 @@ const Header: FC<{}> = () => {
   return (
     <div className={styles.header}>
       <div className={styles.text}>
-        <span>Rock</span>
-        <span>Paper</span>
-        <span>Scissors</span>
+        <span>ROCK </span>
+        <span>PAPER</span>
+        <span>SCISSORS</span>
       </div>
       <div className={styles.score__box}>
         <span>Score</span>
