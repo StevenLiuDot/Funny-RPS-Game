@@ -50,8 +50,8 @@ const Rules = () => {
            <Image
             src="/image-rules.svg"
             alt="RULES"
-            width={300}
-            height={300}
+            width={320}
+            height={320}
           />
         </Modal>
         
