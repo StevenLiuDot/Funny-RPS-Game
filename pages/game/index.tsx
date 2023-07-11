@@ -58,7 +58,7 @@ const Game: NextPage = () => {
       counter > 0
         ? setInterval(() => {
             setCounter(counter - 1);
-          }, 500)
+          }, 1000)
         : getResult();
 
     return () => {
