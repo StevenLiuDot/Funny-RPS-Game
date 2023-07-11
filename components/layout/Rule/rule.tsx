@@ -7,11 +7,13 @@ import styles from "./rule.module.css";
 const Rules = () => {
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
 
-  const handleModal = (): void => {
+
+  const handleOpenModal = (): void => {
+
     setIsModalOpen(true);
   };
 
-  const handleModalClose = (): void => {
+  const handleCloseModal = (): void => {
     setIsModalOpen(false);
   };
 
@@ -30,12 +32,13 @@ const Rules = () => {
   return (
     <>
       <div className={styles.rules}>
-        <button className={styles.rules_button} onClick={handleModal}>
+
+        <button className={styles.rules_button} onClick={handleOpenModal}>
           RULES
         </button>
         <Modal
           isOpen={isModalOpen}
-          onRequestClose={handleModalClose}
+          onRequestClose={handleCloseModal}
           style={customStyles}
         >
           <div className={styles.header}>
@@ -45,13 +48,13 @@ const Rules = () => {
             alt="CLOSE ICON"
             width={20}
             height={20}
-            onClick={handleModalClose}
+            onClick={handleCloseModal}
           /></div>
            <Image
             src="/image-rules.svg"
             alt="RULES"
-            width={300}
-            height={300}
+            width={320}
+            height={320}
           />
         </Modal>
         
