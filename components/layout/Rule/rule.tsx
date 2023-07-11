@@ -7,7 +7,9 @@ import styles from "./rule.module.css";
 const Rules = () => {
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
 
+
   const handleOpenModal = (): void => {
+
     setIsModalOpen(true);
   };
 
@@ -30,6 +32,7 @@ const Rules = () => {
   return (
     <>
       <div className={styles.rules}>
+
         <button className={styles.rules_button} onClick={handleOpenModal}>
           RULES
         </button>
@@ -42,7 +45,7 @@ const Rules = () => {
             <span className={styles.header_title}>RULES</span>
           <Image
             src="/icon-close.svg"
-            alt="Close Icon"
+            alt="CLOSE ICON"
             width={20}
             height={20}
             onClick={handleCloseModal}
